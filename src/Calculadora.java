@@ -8,19 +8,24 @@ public class Calculadora {
 	
 
 	public int suma(int a, int b){
-		return 0;
+		
+		int c = a+b;
+		return c;
 	}
 	
 	public int resta(int a, int b){
-		return 0;
+		int c = a-b;
+		return c;
 	}
 	
 	public int multiplicacion(int a, int b){
-		return 0;
+		int c = a*b;
+		return c;
 	}
 	
 	public int division(int a, int b){
-		return 0;
+		int c = a/b;
+		return c;
 	}
 	
 	
