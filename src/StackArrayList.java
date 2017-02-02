@@ -5,7 +5,7 @@ public class StackArrayList<E>implements iPila<E>{
 
 	public StackArrayList(){
 	// post: constructs a new, empty stack
-	{
+	
 		data = new ArrayList<E>();
 		
 	}
