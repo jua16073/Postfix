@@ -1,12 +1,12 @@
-import java.util.ArrayList;
+import java.util.Vector;
 
 public class StackVector<E>implements iPila<E>{
-	protected ArrayList<E> data;
+	protected Vector<E> data;
 
 	public StackVector(){
 	// post: constructs a new, empty stack
 	
-		data = new ArrayList<E>();
+		data = new Vector<E>();
 		
 	}
 	
@@ -14,12 +14,14 @@ public class StackVector<E>implements iPila<E>{
 	@Override
 	public void push(E algo) {
 		// TODO Auto-generated method stub
+		data.add(algo);
 		
 	}
 	@Override
 	public E pop() {
 		// TODO Auto-generated method stub
-		return null;
+		
+		return data.remove(data.size()-1);
 	}
 	@Override
 	public boolean isEmpty() {
