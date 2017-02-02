@@ -5,10 +5,10 @@
  *
  */
 
-public class Calculadora {
+public class Calculadora implements iCalculadora{
 	
 	
-	public Calculadora(){
+	public Calculadora(String n){
 		
 	}
 	
@@ -18,7 +18,8 @@ public class Calculadora {
 	 * @param b
 	 * @return la suma de los enteros
 	 */
-	public int suma(int a, int b){
+	@Override
+	public double suma(int a, int b){
 		
 		int c = a+b;
 		return c;
@@ -29,7 +30,8 @@ public class Calculadora {
 	 * @param b
 	 * @return la resta de los enteros
 	 */
-	public int resta(int a, int b){
+	@Override
+	public double resta(int a, int b){
 		int c = a-b;
 		return c;
 	}
@@ -39,7 +41,7 @@ public class Calculadora {
 	 * @param b
 	 * @return la multiplicacion de los enteros
 	 */
-	public int multiplicacion(int a, int b){
+	public double multiplicacion(int a, int b){
 		int c = a*b;
 		return c;
 	}
@@ -49,9 +51,16 @@ public class Calculadora {
 	 * @param b
 	 * @return la division de los enteros
 	 */
-	public int division(int a, int b){
+	@Override
+	public double division(int a, int b){
 		int c = a/b;
 		return c;
+	}
+	
+	@Override
+	public double operar(String n){
+		double x=0;
+		return x;
 	}
 	
 	

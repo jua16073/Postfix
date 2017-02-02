@@ -1,14 +1,16 @@
 import java.util.ArrayList;
 
-public class StackArrayList<E>implements iPila<E>{
+public class StackVector<E>implements iPila<E>{
 	protected ArrayList<E> data;
 
-	public StackArrayList(){
+	public StackVector(){
 	// post: constructs a new, empty stack
 	
 		data = new ArrayList<E>();
 		
 	}
+	
+
 	@Override
 	public void push(E algo) {
 		// TODO Auto-generated method stub
@@ -22,7 +24,8 @@ public class StackArrayList<E>implements iPila<E>{
 	@Override
 	public boolean isEmpty() {
 		// TODO Auto-generated method stub
-		return false;
+		return data.size()==0;
 	}
+	
 	
 }
