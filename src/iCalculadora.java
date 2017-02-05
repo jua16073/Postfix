@@ -1,12 +1,12 @@
 public interface iCalculadora {
 
-	public double suma(int a, int b);
+	public double suma(double a, double b);
 	
-	public double resta(int a, int b);
+	public double resta(double a, double b);
 	
-	public double multiplicacion(int a, int b);
+	public double multiplicacion(double a, double b);
 	
-	public double division(int a, int b);
+	public double division(double a, double b);
 	
 	public double operar (String n);
 	

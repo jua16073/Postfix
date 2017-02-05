@@ -20,7 +20,7 @@ public class StackVector<E>implements iPila<E>{
 	public E pop() {
 		// TODO Auto-generated method stub
 		
-		return data.remove(data.size()-1);
+		return data.remove(data.size()-data.size());
 	}
 	@Override
 	public boolean isEmpty() {
