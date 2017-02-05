@@ -7,7 +7,6 @@ public class StackVector<E>implements iPila<E>{
 	// post: constructs a new, empty stack
 	
 		data = new Vector<E>();
-		
 	}
 	
 

@@ -7,9 +7,17 @@
 
 public class Calculadora implements iCalculadora{
 	
+	iPila <String> miStack= new StackVector<String>();
+	double a;
+	double b;
 	
 	public Calculadora(String n){
-		
+		String datos[]= n.split(" ");
+		int x=0;
+		while (x< datos.length){
+			miStack.push(datos[x]);
+			x++;
+		}
 	}
 	
 
@@ -60,6 +68,7 @@ public class Calculadora implements iCalculadora{
 	@Override
 	public double operar(String n){
 		double x=0;
+		
 		return x;
 	}
 	
