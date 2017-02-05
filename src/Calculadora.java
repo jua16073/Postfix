@@ -61,7 +61,7 @@ public class Calculadora implements iCalculadora{
 		return c;
 	}
 	
-	@Override
+	 @Override
 	public double operar(String n){
 		String datos[]= n.split(" ");
 		int x=0;
