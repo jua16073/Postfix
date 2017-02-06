@@ -32,8 +32,6 @@ public class Principal {
 			return a;
 		}
 		return a;
-	
-		
 	}
 
 }

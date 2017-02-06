@@ -70,12 +70,9 @@ public class Calculadora implements iCalculadora{
 			x++;
 		}
 		a= Double.parseDouble(miStack.pop());
-		System.out.println(a);
 		while (miStack.isEmpty()==false){
 			b= Double.parseDouble(miStack.pop());
-			System.out.println(b);
 			String op= (String) miStack.pop();
-			System.out.println(op);
 			switch (op){
 			case "+":
 				a= suma(a,b);
